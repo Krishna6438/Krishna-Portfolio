@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 const RAW_LINES = [
     { tokens: [{ t: 'keyword', v: 'const ' }, { t: 'var', v: 'developer' }, { t: 'op', v: ' = {' }] },
-    { tokens: [{ t: 'key', v: '  name' }, { t: 'op', v: ': ' }, { t: 'str', v: "'Sahil'" }, { t: 'op', v: ',' }] },
+    { tokens: [{ t: 'key', v: '  name' }, { t: 'op', v: ': ' }, { t: 'str', v: "'Krishna Sharma'" }, { t: 'op', v: ',' }] },
     { tokens: [{ t: 'key', v: '  role' }, { t: 'op', v: ': ' }, { t: 'str', v: "'SDE & Full Stack Dev'" }, { t: 'op', v: ',' }] },
     { tokens: [{ t: 'key', v: '  skills' }, { t: 'op', v: ': [' }] },
-    { tokens: [{ t: 'str', v: "    'Next.js'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'React'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'Node.js'" }, { t: 'op', v: ',' }] },
-    { tokens: [{ t: 'str', v: "    'MongoDB'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'C++'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'Tailwind'" }, { t: 'op', v: ',' }] },
+    { tokens: [{ t: 'str', v: "    'React.js'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'Node.js'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'Express.js'" }, { t: 'op', v: ',' }] },
+    { tokens: [{ t: 'str', v: "    'C++'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'Java'" }, { t: 'op', v: ', ' }, { t: 'str', v: "'Tailwind'" }, { t: 'op', v: ',' }] },
     { tokens: [{ t: 'op', v: '  ],' }] },
     { tokens: [{ t: 'key', v: '  openToWork' }, { t: 'op', v: ': ' }, { t: 'bool', v: 'true' }, { t: 'op', v: ',' }] },
-    { tokens: [{ t: 'key', v: '  location' }, { t: 'op', v: ': ' }, { t: 'str', v: "'India 🇮🇳'" }, { t: 'op', v: ',' }] },
+    { tokens: [{ t: 'key', v: '  location' }, { t: 'op', v: ': ' }, { t: 'str', v: "'Agra, India 🇮🇳'" }, { t: 'op', v: ',' }] },
     { tokens: [{ t: 'op', v: '};' }] },
     { tokens: [] },
     { tokens: [{ t: 'comment', v: '// Current mission:' }] },

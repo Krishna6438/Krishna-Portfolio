@@ -7,23 +7,34 @@ const educationData = [
         id: 1,
         institution: 'Lovely Professional University',
         degree: 'Bachelor of Technology',
-        field: 'Computer Science and Engineering',
-        location: 'Punjab, India',
-        period: "Aug '24 – Present",
-        score: 'CGPA: 7.9',
+        field: 'Information Technology',
+        location: 'Jalandhar, Punjab',
+        period: "Aug '22 – Present",
+        score: 'CGPA: 8.04',
         icon: '🎓',
-        color: '#14b8a6', // teal
+        color: '#14b8a6',
     },
     {
         id: 2,
-        institution: 'Jharkhand University of Technology',
-        degree: 'Diploma',
-        field: 'Computer Science',
-        location: 'Ranchi, India',
-        period: "Apr '21 – Jun '24",
-        score: '80.10%',
-        icon: '💻', // maybe a different icon for diploma
-        color: '#6366f1', // indigo
+        institution: 'Global Agra Convent School',
+        degree: '12th with Science',
+        field: 'CBSE Board',
+        location: 'Agra, Uttar Pradesh',
+        period: "Apr '20 – Mar '21",
+        score: '79%',
+        icon: '🏫',
+        color: '#6366f1',
+    },
+    {
+        id: 3,
+        institution: 'Global Agra Convent School',
+        degree: '10th with Science',
+        field: 'CBSE Board',
+        location: 'Agra, Uttar Pradesh',
+        period: "Apr '18 – Mar '19",
+        score: '89.4%',
+        icon: '✏️',
+        color: '#a855f7',
     }
 ];
 

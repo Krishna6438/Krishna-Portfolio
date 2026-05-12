@@ -1,61 +1,88 @@
 import React, { useRef, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { Github, Star, Zap, TrendingUp, Shield } from 'lucide-react';
+import GitHubActivity from '../components/ui/GitHubActivity';
 
 const projects = [
     {
         num: '01',
-        title: 'Talent-IQ-Master',
-        category: 'Real-time Interview System',
-        description: 'A real-time interview system using WebSockets & Stream. Reduced API calls by 40% and improved execution speed by 30%. Also reduced frontend load time by 25% using TanStack Query.',
+        title: 'Quick AI - SaaS Platform',
+        category: 'AI Platform',
+        description: 'Developed an AI SaaS platform for image generation, content creation, resume optimization, and background removal using OpenAI APIs. Built a responsive and high-performance UI with Tailwind CSS.',
         tags: [
+            { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
             { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-            { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-            { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
             { name: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+            { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
         ],
         metrics: [
-            { icon: <TrendingUp size={13} />, label: '30% speed up' },
-            { icon: <Star size={13} />, label: 'WebSockets' },
-            { icon: <Zap size={13} />, label: '-40% API calls' },
+            { icon: <TrendingUp size={13} />, label: '50% faster load' },
+            { icon: <Star size={13} />, label: 'OpenAI APIs' },
+            { icon: <Zap size={13} />, label: '30% conv. boost' },
         ],
-        github: 'https://github.com/sahil29roy/Talent-IQ-Master/',
+        github: 'https://github.com/Krishna6438/Quick-AI',
         accent: '#6366f1',
         gradientFrom: '#1e1b4b', gradientTo: '#1e293b',
-        emoji: '🧠',
+        emoji: '🚀',
         mockupRows: [
             { w: '60%', c: '#6366f1' }, { w: '80%', c: '#818cf8' },
             { w: '45%', c: '#6366f1' }, { w: '70%', c: '#c7d2fe' },
             { w: '55%', c: '#818cf8' },
         ],
-        mockupBadges: ['WebSockets', 'Stream', 'JWT'],
+        mockupBadges: ['OpenAI', 'Clerk', 'Stripe'],
     },
     {
         num: '02',
-        title: 'Video Player API',
-        category: 'Backend Video Platform',
-        description: 'A robust backend video platform with JWT authentication, video uploads, playlists, and Cloudinary integration. Optimized database interactions to improve query speed by 30% and reduce response size by 40%.',
+        title: 'Recipe Blog Website',
+        category: 'Web Application',
+        description: 'Built a secure blog platform with JWT authentication and refresh token strategy, serving 100+ active users. Designed modular REST APIs in Express.js with error-handling middleware.',
         tags: [
+            { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
             { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-            { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-            { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
             { name: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+            { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
         ],
         metrics: [
-            { icon: <TrendingUp size={13} />, label: '30% faster queries' },
+            { icon: <TrendingUp size={13} />, label: '99% reliability' },
             { icon: <Shield size={13} />, label: 'JWT Auth' },
-            { icon: <Zap size={13} />, label: '-40% payload' },
+            { icon: <Zap size={13} />, label: '30% engagement' },
         ],
-        github: 'https://github.com/sahil29roy/Video-Player-',
+        github: 'https://github.com/Krishna6438/RecepieBlog',
         accent: '#10b981',
         gradientFrom: '#064e3b', gradientTo: '#1e293b',
-        emoji: '🎬',
+        emoji: '🥘',
         mockupRows: [
             { w: '75%', c: '#10b981' }, { w: '55%', c: '#34d399' },
             { w: '85%', c: '#10b981' }, { w: '65%', c: '#6ee7b7' },
             { w: '50%', c: '#34d399' },
         ],
-        mockupBadges: ['Cloudinary', 'Videos', 'REST'],
+        mockupBadges: ['JWT', 'Socket.io', 'REST'],
+    },
+    {
+        num: '03',
+        title: 'Discussion Forum',
+        category: 'Community App',
+        description: 'Designed scalable architecture capable of handling concurrent sessions. Integrated search and pagination with optimized SQL queries, reducing response time by 40%.',
+        tags: [
+            { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+            { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+            { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
+        ],
+        metrics: [
+            { icon: <TrendingUp size={13} />, label: '40% faster' },
+            { icon: <Shield size={13} />, label: 'XSS Protection' },
+            { icon: <Zap size={13} />, label: '25% security' },
+        ],
+        github: 'https://github.com/Krishna6438/Discussion-Platform',
+        accent: '#f59e0b',
+        gradientFrom: '#78350f', gradientTo: '#1e293b',
+        emoji: '💬',
+        mockupRows: [
+            { w: '70%', c: '#f59e0b' }, { w: '50%', c: '#fbbf24' },
+            { w: '80%', c: '#f59e0b' }, { w: '60%', c: '#fcd34d' },
+            { w: '55%', c: '#fbbf24' },
+        ],
+        mockupBadges: ['SQL', 'Search', 'Sanitization'],
     },
 ];
 
@@ -304,6 +331,12 @@ const Projects = () => (
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                 {projects.map((p, i) => <ProjectCard key={p.title} project={p} index={i} />)}
+            </div>
+
+            <div className="mt-16 flex justify-center">
+                <div className="w-full max-w-2xl">
+                    <GitHubActivity />
+                </div>
             </div>
         </div>
     </section>

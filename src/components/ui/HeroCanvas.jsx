@@ -1,6 +1,7 @@
-﻿import React, { useRef, useMemo, useState, useEffect } from 'react';
+import React, { useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Points, PointMaterial, Float } from '@react-three/drei';
+import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 /* ── Draggable 3D Shape ── */
 function DraggableShape({ position, args, color, wireframe = false, type = 'icosahedron' }) {
@@ -196,6 +197,10 @@ const HeroCanvas = () => {
                     </group>
 
                     <CameraRig />
+                    
+                    <EffectComposer disableNormalPass>
+                        <Bloom luminanceThreshold={0.2} mipmapBlur intensity={1.2} />
+                    </EffectComposer>
                 </Canvas>
             )}
         </div>

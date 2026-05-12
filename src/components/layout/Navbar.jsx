@@ -39,7 +39,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <a href="#" className="relative group">
                         <span className="text-xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400 group-hover:from-indigo-400 group-hover:to-teal-400 transition-all duration-500">
-                            &lt;S/&gt;
+                            &lt;K/&gt;
                         </span>
                         <div className="absolute -inset-2 bg-teal-400/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-full" />
                     </a>

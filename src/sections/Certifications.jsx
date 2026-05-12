@@ -2,56 +2,32 @@ import React, { useState, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Award, ExternalLink, ShieldCheck, X, Eye, Sparkles } from 'lucide-react';
-import cloudImg from '../assets/cert/cloud computing.png';
-import javaImg from '../assets/cert/java_master_course.jpeg';
-import conflictImg from '../assets/cert/Conflict Management.png';
-import networkingImg from '../assets/cert/The Bits and Bytes of Computer Networking.png';
+import cloudImg from '../assets/cert/cloud.jpeg';
+import cipherImg from '../assets/cert/cipher.jpeg';
 
 const certifications = [
     {
         title: 'Cloud Computing',
-        issuer: 'NPTEL',
+        issuer: 'LPU',
         icon: '☁️',
         color: '#38bdf8',
         accent: '#0ea5e9',
         gradient: 'from-sky-500/20 to-cyan-500/20',
         image: cloudImg,
-        link: 'https://drive.google.com/file/d/1C0aINcQThY9LZPpO1N4u9omJGfEbFAx4/view?usp=drive_link',
+        link: '',
         num: '01',
     },
     {
-        title: 'Java Master Course',
-        issuer: 'Coding Blocks',
-        icon: '☕',
+        title: 'MERN Stack Development',
+        issuer: 'Cipher School',
+        icon: '🚀',
         color: '#14b8a6',
         accent: '#0d9488',
         gradient: 'from-teal-500/20 to-emerald-500/20',
-        image: javaImg,
-        link: 'https://drive.google.com/file/d/1oJxkEzOGszWW3eLVxv9BDSiPvkZu_fDh/view',
+        image: cipherImg,
+        link: '',
         num: '02',
-    },
-    {
-        title: 'Conflict Management',
-        issuer: 'Coursera',
-        icon: '🤝',
-        color: '#f59e0b',
-        accent: '#d97706',
-        gradient: 'from-amber-500/20 to-orange-500/20',
-        image: conflictImg,
-        link: 'https://drive.google.com/file/d/1MYkrsrTYrY_mKti063oeeOMa3CuVeet8/view?usp=drivesdk',
-        num: '03',
-    },
-    {
-        title: 'The Bits and Bytes of Computer Networking',
-        issuer: 'Coursera',
-        icon: '🌐',
-        color: '#8b5cf6',
-        accent: '#7c3aed',
-        gradient: 'from-violet-500/20 to-purple-500/20',
-        image: networkingImg,
-        link: 'https://drive.google.com/file/d/190FKubWDBg2zUg6o2FZ80RlF-wdOJoQl/view?usp=drivesdk',
-        num: '04',
-    },
+    }
 ];
 
 const DRIVE_LINK = 'https://drive.google.com/drive/folders/15-bqpeh99-MqdtlQGh1lcRCnGAI9tFAM?usp=drive_link';
@@ -556,8 +532,8 @@ const Certifications = () => (
                 transition={{ delay: 0.6 }}
             >
                 {[
-                    { label: 'Certifications', value: '4', color: '#c084fc' },
-                    { label: 'Platforms', value: '3', color: '#14b8a6' },
+                    { label: 'Certifications', value: '2', color: '#c084fc' },
+                    { label: 'Platforms', value: '2', color: '#14b8a6' },
                     { label: 'Verified', value: '100%', color: '#34d399' },
                 ].map((stat, i) => (
                     <div key={i} className="flex flex-col items-center gap-1">

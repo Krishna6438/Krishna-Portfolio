@@ -6,50 +6,52 @@ const constellations = [
     {
         id: 'languages', label: 'LANGUAGES', color: '#22d3ee', labelX: 4, labelY: 4,
         skills: [
-            { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', x: 28, y: 18, size: 3 },
             { name: 'C++', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg', x: 12, y: 10, size: 3 },
-            { name: 'C', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg', x: 6, y: 26, size: 2 },
-            { name: 'PHP', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg', x: 22, y: 32, size: 2 },
+            { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg', x: 28, y: 18, size: 3 },
+            { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', x: 6, y: 26, size: 3 },
+            { name: 'C#', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg', x: 22, y: 32, size: 2 },
         ],
-        edges: [[0, 1], [1, 2], [0, 3], [2, 3]],
+        edges: [[0, 1], [1, 2], [0, 2], [2, 3]],
     },
     {
-        id: 'frontend', label: 'FRONTEND', color: '#f97316', labelX: 56, labelY: 4,
+        id: 'frontend', label: 'WEB DEV', color: '#f97316', labelX: 56, labelY: 4,
         skills: [
-            { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', x: 62, y: 10, size: 3 },
-            { name: 'Next.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', invert: true, x: 78, y: 16, size: 3 },
+            { name: 'React.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', x: 62, y: 10, size: 3 },
+            { name: 'Asp.Net', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg', x: 78, y: 16, size: 3 },
             { name: 'Tailwind', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg', x: 90, y: 10, size: 2 },
             { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg', x: 68, y: 28, size: 2 },
             { name: 'HTML5', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', x: 84, y: 28, size: 2 },
             { name: 'CSS3', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', x: 76, y: 36, size: 2 },
         ],
-        edges: [[0, 1], [1, 2], [0, 3], [3, 4], [1, 4], [4, 5]],
+        edges: [[0, 1], [0, 3], [3, 4], [1, 4], [4, 5], [2, 4]],
     },
     {
         id: 'backend', label: 'BACKEND', color: '#34d399', labelX: 30, labelY: 38,
         skills: [
             { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', x: 38, y: 44, size: 3 },
-            { name: 'Express', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', invert: true, x: 54, y: 42, size: 2 },
+            { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg', invert: true, x: 54, y: 42, size: 3 },
         ],
         edges: [[0, 1]],
     },
     {
         id: 'database', label: 'DATABASE', color: '#a855f7', labelX: 4, labelY: 66,
         skills: [
-            { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', x: 14, y: 74, size: 3 },
-            { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', x: 30, y: 80, size: 3 },
+            { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', x: 14, y: 74, size: 3 },
+            { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', x: 30, y: 80, size: 3 },
+            { name: 'SqlServer', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg', x: 40, y: 72, size: 2 },
         ],
-        edges: [[0, 1]],
+        edges: [[0, 1], [1, 2]],
     },
     {
         id: 'tools', label: 'TOOLS & ENV', color: '#eab308', labelX: 54, labelY: 66,
         skills: [
             { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', x: 62, y: 74, size: 3 },
             { name: 'GitHub', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', invert: true, x: 78, y: 70, size: 2 },
-            { name: 'Linux', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', x: 56, y: 86, size: 2 },
-            { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg', x: 72, y: 86, size: 2 },
+            { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', x: 56, y: 86, size: 2 },
+            { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg', x: 72, y: 86, size: 2 },
+            { name: 'Postman', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg', x: 88, y: 80, size: 2 },
         ],
-        edges: [[0, 1], [0, 2], [2, 3]],
+        edges: [[0, 1], [0, 2], [2, 3], [1, 4]],
     },
 ];
 

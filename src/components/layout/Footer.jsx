@@ -15,9 +15,9 @@ const Footer = () => {
 
                 <div className="flex justify-center gap-5 mb-4">
                     {[
-                        { icon: <Github size={22} />, href: 'https://github.com/sahil29roy', color: '#a855f7' },
-                        { icon: <Linkedin size={22} />, href: 'https://linkedin.com/in/sahil29roy', color: '#6366f1' },
-                        { icon: <Mail size={22} />, href: 'mailto:sahil29roy@gmail.com', color: '#14b8a6' },
+                        { icon: <Github size={22} />, href: 'https://github.com/Krishna6438', color: '#a855f7' },
+                        { icon: <Linkedin size={22} />, href: 'https://linkedin.com/in/krishna-sharma123', color: '#6366f1' },
+                        { icon: <Mail size={22} />, href: 'mailto:krishnasharma283125@gmail.com', color: '#14b8a6' },
                     ].map((item, i) => (
                         <a
                             key={i} href={item.href} target="_blank" rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
 
                 <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-2xl gap-4 text-sm text-slate-500 font-medium">
                     <p className="flex items-center gap-1.5 transition-colors hover:text-slate-300">
-                        Designed & Built by Sahil
+                        Designed & Built by Krishna
                     </p>
                     <p className="text-[11px] font-mono tracking-widest uppercase opacity-60">
                         © {new Date().getFullYear()} All Rights Reserved

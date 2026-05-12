@@ -16,13 +16,14 @@ const softSkills = [
 ];
 
 const techPills = [
-    { label: 'Next.js', color: '#14b8a6' },
-    { label: 'React', color: '#38bdf8' },
+    { label: 'React.js', color: '#38bdf8' },
     { label: 'Node.js', color: '#4ade80' },
-    { label: 'MongoDB', color: '#a78bfa' },
-    { label: 'Tailwind CSS', color: '#38bdf8' },
+    { label: 'Express.js', color: '#14b8a6' },
     { label: 'C++', color: '#60a5fa' },
+    { label: 'Java', color: '#f59e0b' },
+    { label: 'Asp.Net', color: '#a78bfa' },
     { label: 'MySQL', color: '#facc15' },
+    { label: 'MongoDB', color: '#4ade80' },
     { label: 'Git', color: '#f87171' },
 ];
 
@@ -82,7 +83,7 @@ const Hero = () => {
                                 backgroundClip: 'text',
                             }}
                         >
-                            Sahil
+                            Krishna Sharma
                         </motion.h1>
 
                         {/* Typewriter */}
@@ -120,7 +121,7 @@ const Hero = () => {
                             transition={{ delay: 0.4 }}
                             className="flex justify-center lg:justify-start gap-6 mb-8"
                         >
-                            {[{ value: '3+', label: 'Months Exp.' }, { value: '2+', label: 'Projects' }, { value: '10+', label: 'Technologies' }].map((s, i) => (
+                            {[{ value: '3+', label: 'Months Exp.' }, { value: '3+', label: 'Projects' }, { value: '15+', label: 'Technologies' }].map((s, i) => (
                                 <div key={i} className="text-center">
                                     <div className="text-2xl font-black" style={{ color: '#2dd4bf' }}>{s.value}</div>
                                     <div className="text-xs text-slate-500 font-medium tracking-wide">{s.label}</div>
@@ -137,7 +138,7 @@ const Hero = () => {
                         >
                             <a
                                 href="/CV.pdf"
-                                download="Sahil_Resume.pdf"
+                                download="Krishna_Sharma_Resume.pdf"
                                 className="px-7 py-3 text-white rounded-full font-semibold transition-all flex items-center justify-center gap-2 hover:scale-105"
                                 style={{
                                     background: 'linear-gradient(135deg, #0d9488, #6366f1)',
@@ -169,9 +170,9 @@ const Hero = () => {
                             {/* Social icons */}
                             <div className="flex gap-5">
                                 {[
-                                    { href: 'https://github.com/sahil29roy', Icon: Github },
-                                    { href: 'https://linkedin.com/in/sahil29roy', Icon: Linkedin },
-                                    { href: 'mailto:sahil29roy@gmail.com', Icon: Mail },
+                                    { href: 'https://github.com/Krishna6438', Icon: Github },
+                                    { href: 'https://linkedin.com/in/krishna-sharma123', Icon: Linkedin },
+                                    { href: 'mailto:krishnasharma283125@gmail.com', Icon: Mail },
                                 ].map(({ href, Icon }, i) => (
                                     <motion.a
                                         key={i}

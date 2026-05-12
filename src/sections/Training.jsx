@@ -5,25 +5,25 @@ import { MapPin, Calendar, Award, Code2 } from 'lucide-react';
 const trainingData = [
     {
         id: 1,
-        institution: 'DSA Summer Bootcamp',
-        degree: 'Training & Development',
-        field: 'Data Structures & Algorithms',
+        institution: 'Cipher School',
+        degree: 'Training',
+        field: 'MERN Stack Development',
         location: 'Online',
-        period: "Jun '25 – Jul '25",
+        period: "July '24 – Oct '24",
         score: '',
-        icon: '🧠',
-        color: '#8b5cf6', // violet
+        icon: '💻',
+        color: '#8b5cf6',
     },
     {
         id: 2,
-        institution: 'Bridztech Infosystem',
-        degree: 'Full Stack Developer',
-        field: 'HTML, CSS, JS, MySQL, Adv. Java',
-        location: 'Online',
-        period: "Oct '23 – Nov '23",
+        institution: 'Outlier AI',
+        degree: 'AI Trainer Intern',
+        field: 'Frontend & Math Logic',
+        location: 'Remote',
+        period: "Aug '24 – May '25",
         score: '',
-        icon: '🚀',
-        color: '#eab308', // yellow
+        icon: '🤖',
+        color: '#14b8a6',
     }
 ];
 

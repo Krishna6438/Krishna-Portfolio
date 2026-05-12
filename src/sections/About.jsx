@@ -191,19 +191,19 @@ const About = () => {
                                 className="text-slate-400 text-base mb-4 leading-relaxed font-light max-w-xl"
                                 initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.25 }}
                             >
-                                I specialize in the <strong className="text-teal-400">MERN stack</strong> and modern frameworks like <strong className="text-teal-400">Next.js</strong> and <strong className="text-teal-400">Tailwind CSS</strong>, constantly focusing on crafting efficient backends and responsive UIs.
+                                I specialize in the <strong className="text-teal-400">MERN stack</strong> and modern frameworks like <strong className="text-teal-400">React.js</strong> and <strong className="text-teal-400">Node.js</strong>, constantly focusing on crafting efficient backends and responsive UIs.
                             </motion.p>
                             <motion.p
                                 className="text-slate-400 text-base mb-4 leading-relaxed font-light max-w-xl"
                                 initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.3 }}
                             >
-                                In my recent internship at <strong className="text-teal-400">Vid AI</strong>, I improved cross-device responsiveness by 40% and reduced UI loading time by 30% by optimizing dynamic interfaces.
+                                In my recent internship at <strong className="text-teal-400">Outlier AI</strong>, I trained AI systems by annotating educational datasets with a focus on HTML, CSS, JS, and math logic.
                             </motion.p>
                             <motion.p
                                 className="text-slate-400 text-base mb-8 leading-relaxed font-light max-w-xl"
                                 initial={{ opacity: 0, x: 30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.35 }}
                             >
-                                Whether it's writing optimized <strong className="text-teal-400">C++</strong> algorithms or architecting a real-time <strong className="text-teal-400">Node.js</strong> backend, quality is my top priority.
+                                Whether it's writing optimized <strong className="text-teal-400">C++</strong> algorithms or architecting a robust <strong className="text-teal-400">Asp.Net</strong> application, quality is my top priority.
                             </motion.p>
 
                             {/* Core Expertise Grid */}
@@ -231,7 +231,7 @@ const About = () => {
                             {/* Premium Bento-style Stats */}
                             <div className="grid grid-cols-2 gap-5 lg:gap-6">
                                 {[
-                                    { value: '5+', label: 'Projects Completed', color: '#14b8a6', glow: 'rgba(20,184,166,0.2)' },
+                                    { value: '3+', label: 'Projects Completed', color: '#14b8a6', glow: 'rgba(20,184,166,0.2)' },
                                     { value: '15+', label: 'Tech Stack', color: '#8b5cf6', glow: 'rgba(139,92,246,0.2)' },
                                     { value: '3+', label: 'Months Exp.', color: '#34d399', glow: 'rgba(52,211,153,0.2)' },
                                     { value: '∞', label: 'Curiosity', color: '#f59e0b', glow: 'rgba(245,158,11,0.2)' },
@@ -300,12 +300,12 @@ const About = () => {
                                 icon: <Star size={22} />,
                                 color: '#f59e0b',
                                 glow: 'rgba(245,158,11,0.15)',
-                                title: 'Web Developer Intern @ Vid AI',
+                                title: 'AI Trainer Intern @ Outlier AI',
                                 points: [
-                                    'Built dynamic UI using Next.js & Tailwind CSS',
-                                    'Improved cross-device responsiveness by 40%',
-                                    'Reduced UI loading time by 30% via optimization',
-                                    'Participated in agile workflows and code reviews',
+                                    'Trained AI systems by annotating educational datasets',
+                                    'Focused on HTML, CSS, JS, and math logic',
+                                    'Enhanced model outputs by refining examples',
+                                    'Labeled edge cases and improved clarity',
                                 ],
                             },
                         ].map((card, i) => (
