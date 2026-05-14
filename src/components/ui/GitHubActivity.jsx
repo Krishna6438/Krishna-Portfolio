@@ -43,7 +43,10 @@ const GitHubActivity = () => {
 
     const renderEventContent = (event) => {
         if (event.type === 'PushEvent') {
-            const commits = event.payload.commits;
+            const commits = event.payload?.commits || [];
+            if (commits.length === 0) {
+                return <p className="text-sm text-slate-300 truncate mt-1">Pushed updates to {event.repo?.name?.split('/')[1] || 'repository'}</p>;
+            }
             return (
                 <p className="text-sm text-slate-300 truncate mt-1">
                     Pushed {commits.length} commit{commits.length > 1 ? 's' : ''}: "{commits[0]?.message || 'Updates'}"
