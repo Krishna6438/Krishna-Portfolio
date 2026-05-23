@@ -1,0 +1,34 @@
+/* src/creative/creative.css */
+.creative-page {
+  background-color: #1a1510; /* Warm dark */
+  color: #f8f5f0; /* Cream text */
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+.creative-page h1, .creative-page h2, .creative-page h3, .creative-page h4, .creative-page h5, .creative-page h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.creative-accent {
+  color: #d4a853; /* Gold */
+}
+
+.bg-creative-dark {
+  background-color: #1a1510;
+}
+
+.bg-creative-card {
+  background-color: #26201a;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  display: inline-flex;
+  width: max-content;
+}

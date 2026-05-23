@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,9 +10,13 @@ const Footer = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center">
                 {/* Subtle refined message */}
-                <h2 className="text-lg md:text-xl font-light text-slate-400 mb-4 tracking-wide text-center">
+                <h2 className="text-lg md:text-xl font-light text-slate-400 mb-2 tracking-wide text-center">
                     Let's build something <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">extraordinary</span>.
                 </h2>
+                
+                <Link to="/creative" className="text-teal-400 hover:text-teal-300 transition-colors text-sm font-medium mb-6 flex items-center gap-2 group">
+                    View Creative Portfolio <span className="group-hover:translate-x-1 transition-transform">→</span>
+                </Link>
 
                 <div className="flex justify-center gap-5 mb-4">
                     {[

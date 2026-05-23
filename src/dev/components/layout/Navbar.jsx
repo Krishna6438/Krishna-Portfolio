@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
@@ -37,15 +39,18 @@ const Navbar = () => {
                     }}>
 
                     {/* Logo */}
-                    <a href="#" className="relative group">
+                    <Link to="/" className="relative group">
                         <span className="text-xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400 group-hover:from-indigo-400 group-hover:to-teal-400 transition-all duration-500">
                             &lt;K/&gt;
                         </span>
                         <div className="absolute -inset-2 bg-teal-400/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-full" />
-                    </a>
+                    </Link>
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-2">
+                        <Link to="/" className="px-4 py-2 text-sm font-medium text-teal-400 hover:text-teal-300 transition-all relative group rounded-full overflow-hidden">
+                            <span className="relative z-10">← Hub</span>
+                        </Link>
                         {navLinks.map((link) => (
                             <a
                                 key={link.title}

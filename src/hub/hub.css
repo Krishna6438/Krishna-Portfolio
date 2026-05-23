@@ -1,0 +1,33 @@
+/* src/hub/hub.css */
+.hub-page {
+  background-color: #03080c; /* Dark slate */
+  color: #f1f5f9;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hub-background {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    radial-gradient(ellipse 100% 40% at 30% -10%, rgba(20, 184, 166, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse 90% 40% at 70% 110%, rgba(212, 168, 83, 0.15) 0%, transparent 60%);
+  background-size: cover;
+  pointer-events: none;
+}
+
+.hub-content {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ambient-pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.ambient-pulse {
+  animation: ambient-pulse 6s ease-in-out infinite;
+}

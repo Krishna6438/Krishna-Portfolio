@@ -24,6 +24,17 @@ const trainingData = [
         score: '',
         icon: '🤖',
         color: '#14b8a6',
+    },
+    {
+        id: 3,
+        institution: 'Capgemini',
+        degree: 'Analyst Training',
+        field: '.NET Development',
+        location: 'On-site',
+        period: "Dec '25 – May '26",
+        score: '',
+        icon: '🏢',
+        color: '#0070ad',
     }
 ];
 

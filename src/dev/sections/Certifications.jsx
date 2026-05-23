@@ -2,8 +2,8 @@ import React, { useState, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { Award, ExternalLink, ShieldCheck, X, Eye, Sparkles } from 'lucide-react';
-import cloudImg from '../assets/cert/cloud.jpeg';
-import cipherImg from '../assets/cert/cipher.jpeg';
+import cloudImg from '../../assets/cert/cloud.jpeg';
+import cipherImg from '../../assets/cert/cipher.jpeg';
 
 const certifications = [
     {
