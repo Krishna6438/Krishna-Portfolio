@@ -171,7 +171,7 @@ const Hero = () => {
                             <div className="flex gap-5">
                                 {[
                                     { href: 'https://github.com/Krishna6438', Icon: Github },
-                                    { href: 'https://linkedin.com/in/krishna-sharma123', Icon: Linkedin },
+                                    { href: 'https://www.linkedin.com/in/krishna-sharma123/', Icon: Linkedin },
                                     { href: 'mailto:krishnasharma283125@gmail.com', Icon: Mail },
                                 ].map(({ href, Icon }, i) => (
                                     <motion.a

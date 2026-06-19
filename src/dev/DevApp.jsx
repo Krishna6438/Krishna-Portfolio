@@ -12,7 +12,7 @@ const About = lazy(() => import('./sections/About'));
 const Skills = lazy(() => import('./sections/Skills'));
 const Projects = lazy(() => import('./sections/Projects'));
 const Education = lazy(() => import('./sections/Education'));
-const Training = lazy(() => import('./sections/Training'));
+const Experience = lazy(() => import('./sections/Experience'));
 const Certifications = lazy(() => import('./sections/Certifications'));
 const Contact = lazy(() => import('./sections/Contact'));
 const AIChatbot = lazy(() => import('./components/ui/AIChatbot'));
@@ -35,7 +35,7 @@ function DevApp() {
           <Skills />
           <Projects />
           <Education />
-          <Training />
+          <Experience />
           <Certifications />
           <Contact />
         </Suspense>

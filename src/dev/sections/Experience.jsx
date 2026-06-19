@@ -1,50 +1,96 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { MapPin, Calendar, Award, Code2 } from 'lucide-react';
+import { MapPin, Calendar, Briefcase, Award, Code2 } from 'lucide-react';
 
-const trainingData = [
+const experienceData = [
     {
         id: 1,
-        institution: 'Cipher School',
-        degree: 'Training',
-        field: 'MERN Stack Development',
-        location: 'Online',
-        period: "July '24 – Oct '24",
-        score: '',
-        icon: '💻',
-        color: '#8b5cf6',
+        institution: 'DigiMark Pro',
+        degree: 'Growth & Technology Associate',
+        field: 'Full-time',
+        location: 'India · On-site',
+        period: "Jun 2026 – Present",
+        icon: '📈',
+        color: '#10b981',
+        points: [
+            "Contribute to building modern digital experiences and growth-focused solutions for businesses.",
+            "Design brand identities, digital assets, and marketing visuals.",
+            "Develop modern responsive websites and landing pages.",
+            "Manage social media presence, branding, and LinkedIn banners.",
+            "Support client projects from concept to execution and explore innovative digital strategies.",
+            "Collaborate on branding, UI/UX, and online positioning."
+        ],
+        skills: ['Web Application Development', 'MERN Stack', 'UI/UX Design', 'Social Media Branding', 'Digital Growth']
     },
     {
         id: 2,
-        institution: 'Outlier AI',
-        degree: 'AI Trainer Intern',
-        field: 'Frontend & Math Logic',
-        location: 'Remote',
-        period: "Aug '24 – May '25",
-        score: '',
+        institution: 'Deccan AI Experts',
+        degree: 'Data Annotator',
+        field: 'Freelance',
+        location: 'India · Remote',
+        period: "May 2026 – Present",
         icon: '🤖',
-        color: '#14b8a6',
+        color: '#8b5cf6',
+        points: [
+            "Annotate complex training datasets and verify logic consistency for large language models.",
+            "Develop and evaluate conversational data for code and mathematics tasks."
+        ],
+        skills: ['AI Data Annotation', 'MERN Stack', 'Programming Verification', 'Quality Assurance']
     },
     {
         id: 3,
         institution: 'Capgemini',
-        degree: 'Analyst Training',
-        field: '.NET Development',
-        location: 'On-site',
-        period: "Dec '25 – May '26",
-        score: '',
+        degree: 'Analyst Trainee',
+        field: 'Apprenticeship',
+        location: 'India · On-site',
+        period: "Dec 2025 – May 2026",
         icon: '🏢',
         color: '#0070ad',
+        points: [
+            "Received hands-on training in software development frameworks and technologies.",
+            "Built and optimized services using ASP.NET Core and relational database management systems."
+        ],
+        skills: ['.NET Development', 'ASP.NET Core', 'C#', 'SQL Server']
+    },
+    {
+        id: 4,
+        institution: 'Outlier AI',
+        degree: 'AI Trainer Intern',
+        field: 'Internship',
+        location: 'Remote',
+        period: "Aug 2024 – May 2025",
+        icon: '🧠',
+        color: '#14b8a6',
+        points: [
+            "Trained AI systems by annotating educational datasets with a focus on HTML, CSS, JS, and math logic.",
+            "Enhanced model outputs by refining examples, labeling edge cases, and improving output clarity."
+        ],
+        skills: ['HTML', 'CSS', 'JavaScript', 'Mathematical Logic', 'Prompt Engineering']
+    },
+    {
+        id: 5,
+        institution: 'Cipher School',
+        degree: 'MERN Stack Trainee',
+        field: 'Training',
+        location: 'Online',
+        period: "Jul 2024 – Oct 2024",
+        icon: '💻',
+        color: '#facc15',
+        points: [
+            "Completed an intensive training program on MERN Stack Web Development.",
+            "Developed fully responsive frontend pages and backend REST APIs with JWT authentication."
+        ],
+        skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs']
     }
 ];
 
-const TrainingCard = ({ item, index }) => {
+const ExperienceCard = ({ item, index }) => {
     return (
         <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
             className="relative pl-8 md:pl-0 w-full group/timeline"
         >
             {/* ── Timeline Center Node (Desktop) ── */}
@@ -100,9 +146,20 @@ const TrainingCard = ({ item, index }) => {
 
                         {/* Header: Degree & Period */}
                         <div className="flex flex-col xl:flex-row xl:items-start justify-between gap-4 border-b border-slate-700/50 pb-5">
-                            <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 tracking-tight leading-tight group-hover:to-white transition-colors">
-                                {item.degree}
-                            </h3>
+                            <div>
+                                <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 tracking-tight leading-tight group-hover:to-white transition-colors">
+                                    {item.degree}
+                                </h3>
+                                <span className="inline-block text-xs font-mono font-bold mt-1.5 px-2.5 py-0.5 rounded-full border"
+                                    style={{
+                                        color: item.color,
+                                        borderColor: `${item.color}40`,
+                                        background: `${item.color}10`,
+                                    }}
+                                >
+                                    {item.field}
+                                </span>
+                            </div>
                             <div className="flex items-center gap-2 text-xs font-mono font-medium text-slate-300 bg-slate-800/80 px-4 py-2 rounded-full w-fit border border-slate-700 shadow-inner whitespace-nowrap"
                                 style={{ boxShadow: `inset 0 0 10px ${item.color}10` }}>
                                 <Calendar size={14} style={{ color: item.color }} />
@@ -110,34 +167,48 @@ const TrainingCard = ({ item, index }) => {
                             </div>
                         </div>
 
-                        {/* Middle: Institution & Field */}
+                        {/* Middle: Institution */}
                         <div className="flex flex-col gap-3">
                             <div className="flex items-center gap-3">
                                 <div className="p-2 rounded-lg" style={{ background: `${item.color}15`, border: `1px solid ${item.color}30` }}>
-                                    <Code2 size={20} style={{ color: item.color }} className="drop-shadow-lg" />
+                                    <Briefcase size={20} style={{ color: item.color }} className="drop-shadow-lg" />
                                 </div>
                                 <h4 className="text-xl font-bold text-slate-100 tracking-wide">{item.institution}</h4>
                             </div>
 
-                            {item.field && (
-                                <p className="text-base text-slate-300 pl-4 border-l-2 ml-4 py-1" style={{ borderColor: `${item.color}50` }}>
-                                    {item.field}
-                                </p>
+                            {/* Role Bullet Points */}
+                            {item.points && (
+                                <ul className="text-sm text-slate-300 pl-4 border-l-2 ml-4 py-1 space-y-2" style={{ borderColor: `${item.color}40` }}>
+                                    {item.points.map((pt, idx) => (
+                                        <li key={idx} className="relative leading-relaxed pl-1.5">
+                                            <span className="absolute left-0 top-2 w-1 h-1 rounded-full" style={{ background: item.color }} />
+                                            {pt}
+                                        </li>
+                                    ))}
+                                </ul>
                             )}
                         </div>
 
-                        {/* Footer: Location & Score */}
-                        <div className="flex flex-wrap items-center gap-4 pt-4 mt-2 border-t border-slate-800/30">
-                            <div className="flex items-center gap-2 text-sm text-slate-400 font-medium bg-slate-900/50 px-3 py-1.5 rounded-lg border border-slate-800">
+                        {/* Footer: Location & Skills Tags */}
+                        <div className="flex flex-col gap-4 pt-4 mt-2 border-t border-slate-800/30">
+                            <div className="flex items-center gap-2 text-sm text-slate-400 font-medium bg-slate-900/50 px-3 py-1.5 rounded-lg border border-slate-800 w-fit">
                                 <MapPin size={16} className="text-rose-400" />
                                 {item.location}
                             </div>
 
-                            {item.score && (
-                                <div className="flex items-center gap-2 text-sm font-bold px-3 py-1.5 rounded-lg border shadow-[0_0_15px_rgba(0,0,0,0.2)] transition-all group-hover:scale-105"
-                                    style={{ color: item.color, background: `${item.color}15`, borderColor: `${item.color}40`, textShadow: `0 0 10px ${item.color}50` }}>
-                                    <Award size={16} />
-                                    {item.score}
+                            {/* Skills Badges */}
+                            {item.skills && (
+                                <div className="flex flex-wrap gap-1.5">
+                                    {item.skills.map((skill, idx) => (
+                                        <span key={idx} className="text-[10px] font-mono px-2 py-0.5 rounded-md border text-slate-400"
+                                            style={{
+                                                borderColor: 'rgba(255, 255, 255, 0.05)',
+                                                background: 'rgba(255, 255, 255, 0.02)',
+                                            }}
+                                        >
+                                            {skill}
+                                        </span>
+                                    ))}
                                 </div>
                             )}
                         </div>
@@ -149,7 +220,7 @@ const TrainingCard = ({ item, index }) => {
     );
 };
 
-const Training = () => {
+const Experience = () => {
     const containerRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -159,7 +230,7 @@ const Training = () => {
     const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
     return (
-        <section id="training" className="py-24 relative overflow-hidden">
+        <section id="experience" className="py-24 relative overflow-hidden">
 
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={containerRef}>
 
@@ -171,13 +242,13 @@ const Training = () => {
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border mb-6 w-fit"
                         style={{ background: 'rgba(234,179,8,0.1)', borderColor: 'rgba(234,179,8,0.2)', color: '#facc15' }}>
                         <span className="w-2 h-2 rounded-full animate-pulse" style={{ background: '#facc15' }}></span>
-                        <span className="text-xs font-mono tracking-widest">DEVELOPMENT</span>
+                        <span className="text-xs font-mono tracking-widest">EXPERIENCE</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">
-                        My <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">Training</span>
+                        Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">Experience</span>
                     </h2>
                     <p className="text-slate-400 max-w-xl mx-auto text-lg font-light">
-                        Bootcamps and specialized training I have completed.
+                        My professional timeline and roles in technology and growth.
                     </p>
                 </motion.div>
 
@@ -199,8 +270,8 @@ const Training = () => {
 
                     {/* Timeline Items */}
                     <div className="flex flex-col relative z-10 pt-8 pb-8">
-                        {trainingData.map((item, index) => (
-                            <TrainingCard key={item.id} item={item} index={index} />
+                        {experienceData.map((item, index) => (
+                            <ExperienceCard key={item.id} item={item} index={index} />
                         ))}
                     </div>
 
@@ -210,4 +281,4 @@ const Training = () => {
     );
 };
 
-export default Training;
+export default Experience;

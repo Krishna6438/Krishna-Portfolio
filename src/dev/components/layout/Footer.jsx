@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="flex justify-center gap-5 mb-4">
                     {[
                         { icon: <Github size={22} />, href: 'https://github.com/Krishna6438', color: '#a855f7' },
-                        { icon: <Linkedin size={22} />, href: 'https://linkedin.com/in/krishna-sharma123', color: '#6366f1' },
+                        { icon: <Linkedin size={22} />, href: 'https://www.linkedin.com/in/krishna-sharma123/', color: '#6366f1' },
                         { icon: <Mail size={22} />, href: 'mailto:krishnasharma283125@gmail.com', color: '#14b8a6' },
                     ].map((item, i) => (
                         <a

@@ -57,10 +57,10 @@ const HubPage = () => {
           <a href="https://github.com/Krishna6438" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-white transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com/in/krishna-sharma" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#0a66c2] transition-colors">
+          <a href="https://www.linkedin.com/in/krishna-sharma123/" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#0a66c2] transition-colors">
             <Linkedin size={24} />
           </a>
-          <a href="mailto:krishna@example.com" className="text-slate-500 hover:text-teal-400 transition-colors">
+          <a href="mailto:krishnasharma283125@gmail.com" className="text-slate-500 hover:text-teal-400 transition-colors">
             <Mail size={24} />
           </a>
         </motion.div>

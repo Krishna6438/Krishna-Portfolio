@@ -161,7 +161,7 @@ const Contact = () => {
                         <div className="flex flex-col gap-3">
                             {[
                                 { icon: <Mail size={18} />, label: 'krishnasharma283125@gmail.com', href: 'mailto:krishnasharma283125@gmail.com', color: '#14b8a6' },
-                                { icon: <Linkedin size={18} />, label: 'LinkedIn Profile', href: 'https://linkedin.com/in/krishna-sharma123', color: '#6366f1' },
+                                { icon: <Linkedin size={18} />, label: 'LinkedIn Profile', href: 'https://www.linkedin.com/in/krishna-sharma123/', color: '#6366f1' },
                                 { icon: <Github size={18} />, label: 'GitHub Projects', href: 'https://github.com/Krishna6438', color: '#a855f7' },
                                 { icon: <Phone size={18} />, label: '+91-7906031731', href: 'tel:+917906031731', color: '#f59e0b' },
                             ].map((item, i) => (

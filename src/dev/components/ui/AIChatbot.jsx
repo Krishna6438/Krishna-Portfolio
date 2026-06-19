@@ -17,11 +17,11 @@ const knowledgeBase = [
     },
     {
         keywords: ['education', 'study', 'college', 'degree'],
-        response: "Krishna holds a B.Tech in Information Technology from MAIT, Delhi (2022-2026) with an 8.5 CGPA."
+        response: "Krishna is pursuing a B.Tech in Information Technology at Lovely Professional University (LPU), Jalandhar (2022-2026), maintaining a CGPA of 8.04."
     },
     {
         keywords: ['experience', 'job', 'intern'],
-        response: "Krishna is actively building real-world digital solutions and seeking internship or full-time opportunities where he can leverage his full-stack skills."
+        response: "Krishna has worked as a Growth & Technology Associate at DigiMark Pro, a Data Annotator at Deccan AI Experts, an Analyst Trainee at Capgemini, and an AI Trainer Intern at Outlier AI."
     },
     {
         keywords: ['hi', 'hello', 'hey', 'who'],

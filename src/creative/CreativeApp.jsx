@@ -3,9 +3,9 @@ import CreativeNavbar from './components/CreativeNavbar';
 import CreativeFooter from './components/CreativeFooter';
 import CreativeHero from './sections/CreativeHero';
 import Services from './sections/Services';
-import Approach from './sections/Approach';
 import CreativeContact from './sections/CreativeContact';
 import MediaShowcase from './sections/MediaShowcase';
+import CreativeProcess from './sections/CreativeProcess';
 import CustomCursor from './components/CustomCursor';
 import Marquee from './components/Marquee';
 import './creative.css';
@@ -20,7 +20,7 @@ const CreativeApp = () => {
         <Marquee />
         <Services />
         <MediaShowcase />
-        <Approach />
+        <CreativeProcess />
         <CreativeContact />
       </main>
       <CreativeFooter />
